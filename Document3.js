@@ -4,7 +4,6 @@ let carousel = document.querySelector('.carousel');
 let listHTML = document.querySelector('.carousel .list');
 let seeMoreButtons = document.querySelectorAll('.seeMore');
 let backButton = document.getElementById('back');
-
 nextButton.onclick = function(){
     showSlider('next');
 }
@@ -15,7 +14,6 @@ let unAcceppClick;
 const showSlider = (type) => {
     nextButton.style.pointerEvents = 'none';
     prevButton.style.pointerEvents = 'none';
-
     carousel.classList.remove('next', 'prev');
     let items = document.querySelectorAll('.carousel .list .item');
     if(type === 'next'){
